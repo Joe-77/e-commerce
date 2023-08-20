@@ -1,0 +1,1624 @@
+/* Start Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+body {
+  font-family: "Manrope";
+}
+html {
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: 0.7s !important;
+}
+input:focus {
+  outline: none;
+}
+i {
+  cursor: pointer;
+}
+#addToCart {
+  user-select: none;
+}
+/* 'End' Global Rules */
+
+/* Start Header */
+.header {
+  background-color: #191919;
+  height: 729px;
+  border-radius: 24px;
+  background-image: url(../assets/home/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-position: right;
+}
+header {
+  width: 1109.83px;
+  margin: auto;
+  padding: 40px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+header .logo {
+  cursor: pointer;
+  display: flex;
+  gap: 25px;
+}
+header .links {
+  display: flex;
+  gap: 50px;
+}
+header .links li a {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+header .links li a:hover {
+  opacity: 0.7;
+}
+header .links i {
+  display: none;
+}
+header .cart {
+  cursor: pointer;
+  width: 23.33px;
+  position: relative;
+}
+header .cart #numCart {
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  top: -16px;
+  right: -10px;
+}
+header .cart .products {
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  min-height: 100px;
+  right: 0;
+}
+.cart .d-none {
+  display: none;
+}
+header .cart .del {
+  padding: 10px 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+header .cart h4 {
+  padding-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+header .cart .products i {
+  float: right;
+  cursor: pointer;
+}
+.header .product {
+  width: 1110px;
+  margin: auto;
+}
+.product .product-left {
+  width: 410px;
+  height: 346px;
+  margin-top: 90px;
+}
+.product .product-left .name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  color: white;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+.product .product-left #head {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 2px;
+  line-height: 58px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.product .product-left .title {
+  width: 320px;
+  height: 75px;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.product .product-left .see {
+  width: 150px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d87d4a;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.product .product-left .see:hover {
+  transform: scale(1.5);
+}
+header #menu {
+  color: white;
+  font-size: 26px;
+  display: none !important;
+  cursor: pointer;
+}
+header .icon-menu #none {
+  position: absolute;
+  z-index: 5;
+  left: 100px;
+  top: -10px;
+  font-size: 22px;
+}
+.icon-menu {
+  display: none;
+}
+.head {
+  background-color: #000000;
+}
+.head h2 {
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.43px;
+  font-weight: bold;
+}
+/* Start Media */
+
+@media (max-width: 480px) {
+  .header {
+    background-image: url(../assets/home/mobile/image-header.jpg);
+    background-position: center;
+  }
+  .product .product-left #head {
+    font-size: 32px;
+    width: 280px;
+  }
+  .header .product {
+    width: 280px;
+  }
+  .product .product-left .title {
+    width: 280px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    width: auto;
+    justify-content: space-around;
+  }
+  header #menu {
+    display: block !important;
+  }
+  header .icon-menu {
+    position: relative;
+  }
+  header .links {
+    display: none;
+  }
+  .header {
+    max-width: 991px;
+    overflow: hidden;
+    background-image: url(../assets/home/tablet/image-header.jpg);
+    background-position: center;
+  }
+  header ul {
+    position: absolute;
+    left: -500px;
+    flex-direction: column;
+    min-height: 100vh;
+    top: 0px;
+    transition: 0.5s;
+    padding: 70px 50px;
+    z-index: 555;
+    background-color: #78716c;
+  }
+  .header ul li a {
+    color: black;
+    font-weight: bold;
+  }
+  .icon-menu {
+    display: block;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .product .product-left .see {
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+  }
+  .product .product-left {
+    width: auto;
+  }
+  .header .product {
+    max-width: 600px;
+    text-align: center;
+  }
+  .product .product-left .title {
+    width: auto;
+    line-height: 30px;
+  }
+}
+/* End Media */
+/* End Header */
+
+/* Start Content */
+.content {
+  display: flex;
+  justify-content: space-around;
+  /* column-gap: 40px; */
+  max-width: 1110px;
+  margin: 100px auto 50px;
+}
+.content .product {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  width: 310px;
+  text-align: center;
+}
+.content .product .inf p {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1.29px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.content .product .inf a {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #000000;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .product .inf a span {
+  width: 5px;
+  height: 10px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+.content .product .inf a:hover span {
+  animation: left-right 0.5s alternate linear infinite;
+}
+@keyframes left-right {
+  50% {
+    transform: translateX(2px);
+  }
+}
+.content .product-1 .inf {
+  padding-bottom: 15px;
+}
+.content .product .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 160px;
+  margin-top: -60px;
+}
+.seeProduct {
+  display: block;
+}
+.content .product-1 .img {
+  background-image: url(../assets/shared/desktop/image-category-thumbnail-headphones.png);
+}
+.content .product-2 .img {
+  background-image: url(../assets/shared/desktop/image-category-thumbnail-speakers.png);
+}
+.content .product-3 .img {
+  background-image: url(../assets/shared/desktop/image-category-thumbnail-earphones.png);
+}
+
+/* Start Media */
+
+@media (max-width: 480px) {
+  .content {
+    width: auto;
+    max-width: 500px;
+    flex-direction: column;
+    row-gap: 90px;
+    align-items: center;
+  }
+  .inf {
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .content {
+    flex-wrap: wrap;
+    row-gap: 90px;
+    max-width: 991px;
+    justify-content: space-around;
+  }
+  .inf {
+    padding-bottom: 15px;
+  }
+  .content .product {
+    width: 250px;
+  }
+}
+
+/* End Media */
+
+/* End Content */
+
+/* Start Item1 */
+.item {
+  max-width: 1110px;
+  margin: 80px auto 40px;
+  background-color: #d87d4a;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  height: 560px;
+}
+.item .img {
+  background-image: url(../assets/home/desktop/image-speaker-zx9.png);
+  background-size: cover;
+  width: 410px;
+  height: 493px;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+.item .title {
+  padding-top: 100px;
+  width: 349px;
+  margin: 0 auto;
+}
+.item .title p:first-child {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.item .title p:nth-child(2) {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  opacity: 0.75;
+  font-weight: 500;
+}
+.seeProduct {
+  width: 160px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.seeProduct:hover {
+  background-color: transparent;
+  border: 1px solid #4c4c6d;
+  color: black;
+}
+
+/* Start Media */
+@media (max-width: 991px) {
+  .item {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .item .img {
+    background-image: url(../assets/home/mobile/image-speaker-zx9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 280px;
+  }
+  .item .title {
+    width: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .item .title p:last-child {
+    width: fit-content;
+    padding: 15px;
+    margin: 20px auto;
+  }
+}
+/* End Media */
+/* End Item1 */
+
+/* Start Speaker */
+#speaker {
+  max-width: 1110px;
+  margin: auto;
+  background-image: url(../assets/home/desktop/image-speaker-zx7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+#speaker .title1 {
+  padding-left: 50px;
+}
+#speaker .title1 h3 {
+  line-height: 38px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Start Media */
+@media (max-width: 480px) {
+  #speaker {
+    background-image: url(../assets/home/mobile/image-speaker-zx7.jpg);
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #speaker {
+    background-image: url(../assets/home/tablet/image-speaker-zx7.jpg);
+  }
+}
+/* End Media */
+/* End Speaker */
+
+/* Start Headphone */
+#headphone {
+  max-width: 1110px;
+  margin: 30px auto;
+  display: flex;
+}
+#headphone .bk {
+  background-image: url(../assets/home/mobile/image-earphones-yx1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 320px;
+}
+#headphone .title {
+  background-color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#headphone h3 {
+  line-height: 38px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  #headphone {
+    flex-direction: column;
+  }
+  #headphone .bk {
+    background-image: url(../assets/home/mobile/image-earphones-yx1.jpg);
+    width: 100%;
+  }
+  #headphone .title {
+    padding: 20px 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #headphone .bk {
+    background-image: url(../assets/home/tablet/image-earphones-yx1.jpg);
+    width: 80%;
+  }
+}
+/* End Headphone */
+
+/* Start Person */
+#person {
+  max-width: 1110px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#person .title {
+  width: 445px;
+}
+#person .img {
+  width: 544px;
+  height: 588px;
+  background-image: url(../assets/shared/desktop/image-best-gear.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#person .title h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#person .title h3 span {
+  color: #d87d4a;
+}
+#person .title p {
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0.5;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  #person {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  #person .img {
+    background-image: url(../assets/shared/mobile/image-best-gear.jpg);
+    max-width: 100%;
+    height: 300px;
+  }
+  #person .title {
+    max-width: 327px;
+  }
+  #person .title h3 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+  #person .title p {
+    max-width: 300px;
+    padding: 0 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #person .img {
+    background-image: url(../assets/shared/tablet/image-best-gear.jpg);
+    width: 100%;
+    height: 300px;
+  }
+  #person .title {
+    max-width: 573px;
+  }
+  #person .title h3 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+/* End Person */
+
+/* Start Footer */
+.page-1 {
+  background-color: #101010;
+  margin-top: 50px;
+}
+.page-1 .logo img {
+  width: 143px;
+  height: 25px;
+  cursor: pointer;
+}
+.page-1 .logo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: auto;
+  padding: 20px 0 15px;
+}
+.page-1 ul {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+}
+.page-1 ul li a {
+  color: white;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.page-1 ul li:hover a {
+  color: #d87d4a;
+}
+.page-1 #social {
+  max-width: 1110px;
+  margin: auto;
+  padding: 20px 0 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.page-1 #social .des {
+  width: 540px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.socialMedia {
+  display: flex;
+  gap: 20px;
+}
+.socialMedia i {
+  font-size: 20px;
+  color: white;
+  transition: 0.5s;
+}
+.socialMedia a:hover i {
+  color: #d87d4a;
+}
+.copyRight {
+  max-width: 1110px;
+  margin: auto;
+  color: white;
+  font-size: 15px;
+  opacity: 0.5;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .page-1 .logo {
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 7px;
+  }
+  .page-1 #social {
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .copyRight {
+    padding: 0 10px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .page-1 #social .des {
+    width: auto;
+  }
+  .page-1 ul {
+    flex-direction: column;
+  }
+  .page-1 .logo {
+    max-width: 300px;
+    margin: 0;
+    padding: 15px;
+  }
+}
+/* End Footer */
+
+/* Start HeadPhone1 */
+.All {
+  max-width: 1110px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.All .img {
+  background-size: cover;
+  background-position: center;
+  width: 540px;
+  height: 540px;
+}
+#headPhone1 .img {
+  background-image: url(../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg);
+}
+#headPhone2 .img {
+  background-image: url(../assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg);
+}
+#headPhone3 .img {
+  background-image: url(../assets/product-xx59-headphones/desktop/image-category-page-preview.jpg);
+}
+#headPhone2 {
+  padding: 50px 0;
+}
+#speaker1 .img {
+  background-image: url(../assets/product-zx9-speaker/desktop/image-category-page-preview.jpg);
+}
+#speaker2 .img {
+  background-image: url(../assets/product-zx7-speaker/desktop/image-category-page-preview.jpg);
+}
+#earphone1 .img {
+  background-image: url(../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg);
+}
+.All .title {
+  width: 445px;
+}
+.All .title h6 {
+  font-size: 14px;
+  line-height: 10px;
+  color: #d87d4a;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+.All .title h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.All .title .describe {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.allLink {
+  display: block;
+  width: 160px;
+  padding: 15px 0;
+  margin-top: 40px;
+  background-color: #fbaf85;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.allLink:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  color: black;
+  border: 1px solid #fbaf85;
+}
+.speaker2 {
+  padding-top: 50px;
+}
+.per {
+  padding-top: 70px;
+}
+#back {
+  max-width: 1110px;
+  margin: auto;
+}
+.back {
+  display: block;
+  padding-top: 50px;
+  width: fit-content;
+  line-height: 25px;
+  font-size: 15px;
+  color: #000000;
+  transition: 0.3s;
+}
+.back:hover {
+  color: #d87d4a;
+}
+#Salary {
+  padding: 40px 0;
+  letter-spacing: 1.29px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+.addAll {
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+}
+.add {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  user-select: none;
+}
+#add,
+#minus {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#addToCart {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d87d4a;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.allInfo {
+  max-width: 1110px;
+  margin: auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.allInfo .feature {
+  max-width: 625px;
+}
+.allInfo .feature h3,
+.allInfo .box h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.allInfo .feature p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.allInfo .feature .first {
+  margin-bottom: 15px;
+}
+.allInfo .box {
+  width: 350px;
+}
+.allInfo .box .headFeature {
+  margin-bottom: 15px;
+}
+.allInfo .box .headFeature span {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+}
+.allInfo .box .headFeature span:first-child {
+  color: #d87d4a;
+  padding-right: 30px;
+}
+.gallery {
+  padding-top: 80px;
+  max-width: 1110px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+.gallery2 {
+  margin-top: 28px;
+}
+
+.first,
+.scound,
+.third {
+  background-size: cover;
+  background-position: center;
+}
+.Gallery {
+  padding-top: 80px;
+  display: flex;
+  gap: 25px;
+  max-width: 1110px;
+  margin: auto;
+}
+.Gallery .first,
+.Gallery .scound {
+  width: 445px;
+  height: 280px;
+}
+.Gallery .first {
+  background-image: url(../assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg);
+}
+.Gallery .scound {
+  background-image: url(../assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg);
+  margin-top: 28px;
+}
+.Gallery .third {
+  background-image: url(../assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg);
+  width: 635px;
+  height: 592px;
+}
+.category {
+  padding-top: 70px;
+  max-width: 1110px;
+  margin: auto;
+}
+.category h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 1.14px;
+  line-height: 36px;
+  padding-bottom: 70px;
+}
+.allProduct {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  padding-bottom: 60px;
+}
+.allProduct .Allcategory .img {
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 318px;
+}
+.Allcategory {
+  text-align: center;
+}
+#category1 .img {
+  background-image: url(../assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg);
+}
+#category2 .img {
+  background-image: url(../assets/product-xx59-headphones/desktop/image-category-page-preview.jpg);
+}
+
+#category3 .img {
+  background-image: url(../assets/product-zx9-speaker/desktop/image-category-page-preview.jpg);
+}
+.Allcategory .info h2 {
+  padding: 30px 0 20px;
+  letter-spacing: 1.71px;
+}
+.Allcategory .info a {
+  display: block;
+  margin: auto;
+  width: 160px;
+  padding: 10px 0;
+  color: #ffff;
+  font-size: 13px;
+  background-color: #d87d4a;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.Allcategory .info a:hover {
+  transform: scale(1.2);
+  background-color: #aa6a45;
+}
+#headphones1 .img {
+  background-image: url(../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg);
+}
+#headphones2 .img {
+  background-image: url(../assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg);
+}
+#head2 .first {
+  background-image: url(../assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg);
+}
+#head2 .scound {
+  margin-top: 10px;
+  background-image: url(../assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg);
+}
+#head2 .third {
+  background-image: url(../assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg);
+}
+#phone1 .img {
+  background-image: url(../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg);
+}
+#headphone3 .img {
+  background-image: url(../assets/product-xx59-headphones/desktop/image-category-page-preview.jpg);
+}
+#head3 .first {
+  background-image: url(../assets/product-xx59-headphones/desktop/image-gallery-1.jpg);
+}
+#head3 .scound {
+  background-image: url(../assets/product-xx59-headphones/desktop/image-gallery-2.jpg);
+}
+#head3 .third {
+  background-image: url(../assets/product-xx59-headphones/desktop/image-gallery-3.jpg);
+}
+#ear1 .first {
+  background-image: url(../assets/product-yx1-earphones/desktop/image-gallery-1.jpg);
+}
+#ear1 .scound {
+  background-image: url(../assets/product-yx1-earphones/desktop/image-gallery-2.jpg);
+}
+#ear1 .third {
+  background-image: url(../assets/product-yx1-earphones/desktop/image-gallery-3.jpg);
+}
+.Gallery .third {
+  background-position: center !important;
+}
+#speak2 .first {
+  background-image: url(../assets/product-zx7-speaker/desktop/image-gallery-1.jpg);
+}
+#speak2 .scound {
+  background-image: url(../assets/product-zx7-speaker/desktop/image-gallery-2.jpg);
+}
+#speak2 .third {
+  background-image: url(../assets/product-zx7-speaker/desktop/image-gallery-3.jpg);
+}
+#speak1 .first {
+  background-image: url(../assets/product-zx9-speaker/desktop/image-gallery-1.jpg);
+}
+#speak1 .scound {
+  background-image: url(../assets/product-zx9-speaker/desktop/image-gallery-2.jpg);
+}
+#speak1 .third {
+  background-image: url(../assets/product-zx9-speaker/desktop/image-gallery-3.jpg);
+}
+.All .img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  #headPhone2,
+  #speaker2 {
+    flex-direction: column-reverse;
+  }
+  .All .title h6 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .All .title h2 {
+    text-align: center;
+  }
+  .All .title .describe {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .allLink {
+    margin: 40px auto 0;
+  }
+  .All {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .back {
+    width: fit-content;
+  }
+  #back {
+    width: fit-content;
+  }
+  .allInfo {
+    flex-direction: column;
+    padding: 40px 20px 0;
+    overflow: hidden;
+  }
+  .allInfo .feature {
+    padding-bottom: 20px;
+  }
+  .allProduct {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .All .img {
+    max-width: 327px;
+    height: 327px;
+  }
+  #Salary {
+    padding-left: 20px;
+  }
+  #headPhone1 .img {
+    background-image: url(../assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg);
+  }
+  #headPhone2 .img {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg);
+  }
+  #headPhone3 .img {
+    background-image: url(../assets/product-xx59-headphones/mobile/image-category-page-preview.jpg);
+  }
+  #speaker1 .img {
+    background-image: url(../assets/product-zx9-speaker/mobile/image-category-page-preview.jpg);
+  }
+  #speaker2 .img {
+    background-image: url(../assets/product-zx7-speaker/mobile/image-category-page-preview.jpg);
+  }
+  #earphone1 .img {
+    background-image: url(../assets/product-yx1-earphones/mobile/image-category-page-preview.jpg);
+  }
+  .All .title {
+    max-width: 327px;
+  }
+  #headphones1 .img {
+    background-image: url(../assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg);
+  }
+  #headphones2 .img {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg);
+  }
+  .Gallery {
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+  }
+  .Gallery .first,
+  .Gallery .scound {
+    width: 320px;
+    height: 174px;
+  }
+  .Gallery .third {
+    width: 320px;
+    height: 368px;
+    background-position: inherit;
+  }
+  .Gallery .first {
+    background-image: url(../assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg);
+  }
+  .Gallery .scound {
+    margin-top: 10px;
+    background-image: url(../assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg);
+  }
+  .gallery .third {
+    background-image: url(../assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg);
+  }
+
+  #head2 .first {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg);
+  }
+  #head2 .scound {
+    margin-top: 10px;
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg);
+  }
+  #head2 .third {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg);
+  }
+
+  .allProduct {
+    flex-direction: column;
+    align-items: center;
+  }
+  .allProduct .Allcategory .img {
+    max-width: 327px;
+  }
+  #category1 .img {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg);
+  }
+  #category2 .img {
+    background-image: url(../assets/product-xx59-headphones/mobile/image-category-page-preview.jpg);
+  }
+
+  #category3 .img {
+    background-image: url(../assets/product-zx9-speaker/mobile/image-category-page-preview.jpg);
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .All .img {
+    width: 460px;
+    height: 460px;
+  }
+  .page-1 .logo,
+  .page-1 #social,
+  .copyRight {
+    max-width: 700px;
+  }
+  .page-1 #social {
+    align-items: center;
+  }
+  .page-1 #social .des {
+    width: 470px;
+  }
+  #headPhone1 .img {
+    background-image: url(../assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg);
+  }
+  #headPhone2 .img {
+    background-image: url(../assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg);
+  }
+  #headPhone3 .img {
+    background-image: url(../assets/product-xx59-headphones/tablet/image-category-page-preview.jpg);
+  }
+  #speaker1 .img {
+    background-image: url(../assets/product-zx9-speaker/tablet/image-category-page-preview.jpg);
+  }
+  #speaker2 .img {
+    background-image: url(../assets/product-zx7-speaker/tablet/image-category-page-preview.jpg);
+  }
+  #earphone1 .img {
+    background-image: url(../assets/product-yx1-earphones/tablet/image-category-page-preview.jpg);
+  }
+  #headphones1 .img {
+    background-image: url(../assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg);
+  }
+  .Gallery {
+    max-width: 690px;
+    padding: 80px 20px 0;
+  }
+  .Gallery .first,
+  .Gallery .scound {
+    width: 277px;
+    height: 174px;
+  }
+  .Gallery .third {
+    width: 395px;
+    height: 368px;
+    background-position: inherit;
+  }
+  .Gallery .first {
+    background-image: url(../assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg);
+  }
+  .Gallery .scound {
+    margin-top: 10px;
+    background-image: url(../assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg);
+  }
+  .gallery .third {
+    background-image: url(../assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg);
+  }
+  #head2 .first {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg);
+  }
+  #head2 .scound {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg);
+  }
+  #head2 .third {
+    background-image: url(../assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg);
+  }
+  .category {
+    max-width: 691px;
+  }
+  .allProduct .Allcategory .img {
+    width: 223px;
+  }
+  #category1 .img {
+    background-image: url(../assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg);
+  }
+  #category2 .img {
+    background-image: url(../assets/product-xx59-headphones/tablet/image-category-page-preview.jpg);
+  }
+
+  #category3 .img {
+    background-image: url(../assets/product-zx9-speaker/tablet/image-category-page-preview.jpg);
+  }
+  #headphones2 .img {
+    background-image: url(../assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg);
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  header,
+  .header .product {
+    max-width: 1000px;
+  }
+  .page-1 #social,
+  .page-1 .logo,
+  .copyRight {
+    width: 990px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .allInfo .box {
+    flex-basis: 30%;
+  }
+  .allInfo .feature {
+    flex-basis: 70%;
+  }
+  .allInfo {
+    gap: 30px;
+    flex-direction: row;
+  }
+}
+/* End HeadPhones */
+
+/* Start Pay Cart */
+.check {
+  margin: 40px auto 0;
+  max-width: 1100px;
+  display: flex;
+  gap: 60px;
+}
+.checkOut {
+  max-width: 730px;
+  background-color: white;
+  padding: 20px;
+}
+.checkOut h1,
+.summary h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #264653;
+}
+
+div#totalNum {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 10px;
+}
+#totalNum h5 {
+  color: gray;
+}
+#totalNum p {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+#totalNum #GRAND {
+  color: #d87d4a;
+}
+.checkOut h5 {
+  margin: 10px 0;
+  color: #d87d4a;
+  letter-spacing: 2px;
+}
+.check label {
+  display: block;
+  margin: 5px 0;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+.check input {
+  width: 309px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+}
+input:focus::placeholder {
+  opacity: 0;
+  transition: 0.8s;
+}
+.check .allMail {
+  display: flex;
+  gap: 15px;
+}
+.check small {
+  margin-top: 10px;
+  font-size: 10px;
+  color: red;
+  display: block;
+  letter-spacing: 1px;
+}
+.phone {
+  margin-top: 15px;
+}
+.d-none {
+  display: none !important;
+}
+.shipping {
+  margin-top: 40px;
+}
+.shipping div {
+  margin-top: 15px;
+}
+.address input {
+  width: 90%;
+}
+.payment {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.payment .right p {
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+.payment .left {
+  align-self: end;
+  margin-top: 25px;
+}
+.payment .left input {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+.payment .left label {
+  cursor: pointer;
+  width: 100%;
+}
+.payment .left div {
+  display: flex;
+  /* border: 1px solid orange; */
+  gap: 5px;
+  width: 309px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
+.checked {
+  border: 1px solid orange !important;
+}
+/* .mainDiv {
+  display: flex;
+  gap: 20px;
+  min-width: 300px;
+}
+.mainDiv div:nth-child(2) {
+  align-self: center;
+}
+.mainDiv h3 {
+  margin-bottom: 10px;
+}
+.mainDiv img {
+  width: 100px;
+  height: 100px;
+}
+.myProduct img {
+  width: 80px;
+  height: 80px;
+  margin: 20px 10px;
+} */
+.summary img {
+  width: 60px;
+  height: 60px;
+}
+.summary .mainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myAllProducts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.summary .myAllProducts h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.summary .myAllProducts h5 {
+  font-size: 12px;
+  color: gray;
+}
+.summary {
+  width: 300px;
+  height: fit-content;
+  background: white;
+  padding: 10px 20px 40px;
+}
+#btn {
+  width: 100%;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  background-color: #d87d4a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  user-select: none;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+#btn:hover {
+  background-color: #fb8500;
+  transform: scale(1.1);
+}
+.quantity {
+  color: gray;
+  letter-spacing: 1.5px;
+}
+.orderCheck {
+  position: absolute;
+  z-index: 55555;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 0 10px #ddd;
+  padding: 30px;
+  width: 540px;
+}
+.thanks h2 {
+  margin: 20px 0 10px;
+  line-height: 1.5;
+  letter-spacing: 1.1px;
+  font-size: 2rem;
+}
+.thanks p {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.checkMyOrder {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+.checkMyOrder h2 {
+  margin-bottom: 15px;
+  color: gray;
+  letter-spacing: 2px;
+}
+.checkMyOrder strong {
+  font-size: 20px;
+}
+.orderCheck a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  background: #d87d4a;
+  padding: 10px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  transition: 0.7s;
+}
+.orderCheck a:hover {
+  background: #764d35;
+}
+
+@media (max-width: 480px) {
+  .checkOut input,
+  .payment .left div {
+    width: 90% !important;
+  }
+  .orderCheck {
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .check .allMail,
+  .payment {
+    flex-direction: column;
+  }
+  .orderCheck {
+    max-width: 400px;
+    top: 1200px;
+    transform: translateX(-50%);
+  }
+
+  .address input {
+    width: 309px;
+  }
+  .payment .left {
+    align-self: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .check {
+    flex-direction: column;
+  }
+  .summary,
+  .checkOut {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* End Pay Cart */

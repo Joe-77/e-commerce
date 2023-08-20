@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>audiophile</title>
+    <link rel="icon" href="assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/Normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="head">
+      <header>
+        <div class="logo">
+          <div class="icon-menu">
+            <i id="menu" class="fa-solid fa-bars"></i>
+          </div>
+          <img src="assets/shared/desktop/logo.svg" alt="" />
+        </div>
+        <ul class="links">
+          <i id="none" class="fa-solid fa-xmark"></i>
+          <li class="home"><a href="index.html">home</a></li>
+          <li class="headphone"><a href="headphone.html">headphone</a></li>
+          <li class="speaker"><a href="speaker.html">speakers</a></li>
+          <li class="earphone"><a href="earphone.html">earphones</a></li>
+        </ul>
+        <div class="cart">
+          <img src="assets/shared/desktop/icon-cart.svg" alt="" />
+          <span id="numCart">0</span>
+          <div class="products d-none" id="Product">
+            <div class="del">
+              <i id="xMark" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="myProducts">
+              <h4 class="emptyCart">Your cart is empty.</h4>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div id="back">
+      <a class="back" href="index.html">Go Back</a>
+    </div>
+
+    <div id="Headphone3" class="All">
+      <div class="img">
+        <img
+          src="assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+          alt=""
+        />
+      </div>
+      <div class="title">
+        <h6>NEW PRODUCT</h6>
+        <h2><span id="nameAll">XX59</span> Headphones</h2>
+        <p class="describe">
+          Enjoy your audio almost anywhere and customize it to your specific
+          tastes with the XX59 headphones. The stylish yet durable versatile
+          wireless headset is a brilliant companion at home or on the move.
+        </p>
+        <p id="Salary" class="Salary">$ <strong id="p-salary">899</strong></p>
+        <div class="addAll">
+          <div class="add">
+            <span id="minus" class="min" onclick="minNum()">-</span>
+            <span id="num" class="Num">01</span>
+            <span id="add" class="Add" onclick="addNum()">+</span>
+          </div>
+
+          <div
+            id="addToCart"
+            class="addH3"
+            onclick="addToCart('2','assets/product-xx59-headphones/desktop/image-category-page-preview.jpg')"
+          >
+            ADD TO CART
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="allInfo">
+      <div class="feature">
+        <h3>FEATURES</h3>
+        <p class="first">
+          These headphones have been created from durable, high-quality
+          materials tough enough to take anywhere. Its compact folding design
+          fuses comfort and minimalist style making it perfect for travel.
+          Flawless transmission is assured by the latest wireless technology
+          engineered for audio synchronization with videos.
+        </p>
+        <p>
+          More than a simple pair of headphones, this headset features a pair of
+          built-in microphones for clear, hands-free calling when paired with a
+          compatible smartphone. Controlling music and calls is also intuitive
+          thanks to easy-access touch buttons on the earcups. Regardless of how
+          you use the XX59 headphones, you can do so all day thanks to an
+          impressive 30-hour battery life that can be rapidly recharged via
+          USB-C.
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>in the box</h3>
+
+        <div>
+          <div class="headFeature">
+            <span>1x</span>
+            <span>Headphone Unit</span>
+          </div>
+
+          <div class="headFeature">
+            <span>2x</span>
+            <span>Replacement Earcups</span>
+          </div>
+
+          <div class="headFeature">
+            <span>1x</span>
+            <span>User Manual</span>
+          </div>
+
+          <div class="headFeature">
+            <span>1x</span>
+            <span>3.5mm 5m Audio Cable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Gallery" id="head3">
+      <div>
+        <div class="first"></div>
+        <div class="scound"></div>
+      </div>
+      <div class="third"></div>
+    </div>
+
+    <div class="category">
+      <h3>you may also like</h3>
+      <div class="allProduct">
+        <div class="Allcategory" id="phone1">
+          <div class="img"></div>
+          <div class="info">
+            <h2>XX99 MARK II</h2>
+            <a href="headphones1.html">See Product</a>
+          </div>
+        </div>
+
+        <div class="Allcategory" id="category1">
+          <div class="img"></div>
+          <div class="info">
+            <h2>XX99 MARK I</h2>
+            <a href="headphone2.html">See Product</a>
+          </div>
+        </div>
+
+        <div class="Allcategory" id="category3">
+          <div class="img"></div>
+          <div class="info">
+            <h2>ZX9 SPEAKER</h2>
+            <a href="speaker1.html">See Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content speaker2">
+      <div class="product product-1">
+        <div class="img"></div>
+        <div class="inf">
+          <p>Headphones</p>
+          <a href="headphone.html"
+            >shop
+            <span
+              ><img
+                src="assets/shared/desktop/icon-arrow-right.svg"
+                alt="" /></span
+          ></a>
+        </div>
+      </div>
+      <div class="product product-2">
+        <div class="img"></div>
+        <div class="inf">
+          <p>speakers</p>
+          <a href="speaker.html"
+            >shop
+            <span
+              ><img
+                src="assets/shared/desktop/icon-arrow-right.svg"
+                alt="" /></span
+          ></a>
+        </div>
+      </div>
+      <div class="product product-3">
+        <div class="img"></div>
+        <div class="inf">
+          <p>earphones</p>
+          <a href="earphone.html"
+            >shop
+            <span
+              ><img
+                src="assets/shared/desktop/icon-arrow-right.svg"
+                alt="" /></span
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="person">
+      <div class="title">
+        <h3>Bringing you the <span>best</span> audio gear</h3>
+
+        <p>
+          Located at the heart of New York City, Audiophile is the premier store
+          for high end headphones, earphones, speakers, and audio accessories.
+          We have a large showroom and luxury demonstration rooms available for
+          you to browse and experience a wide range of our products. Stop by our
+          store to meet some of the fantastic people who make Audiophile the
+          best place to buy your portable audio equipment.
+        </p>
+      </div>
+      <div class="img"></div>
+    </div>
+
+    <footer class="page-1">
+      <div class="logo">
+        <img src="assets/shared/desktop/logo.svg" alt="" />
+        <ul class="icon">
+          <li class="home"><a href="index.html">home</a></li>
+          <li class="headphone"><a href="headphone.html">headphone</a></li>
+          <li class="speaker"><a href="speaker.html">speakers</a></li>
+          <li class="earphone"><a href="earphone.html">earphones</a></li>
+        </ul>
+      </div>
+      <div id="social">
+        <div class="des">
+          Audiophile is an all in one stop to fulfill your audio needs. We're a
+          small team of music lovers and sound specialists who are devoted to
+          helping you get the most out of personal audio. Come and visit our
+          demo facility - we’re open 7 days a week.
+        </div>
+        <div class="socialMedia">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="copyRight">
+        <i class="fa-regular fa-copyright"></i>
+        <span id="copyRight"></span>
+        <span>All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/sell.js"></script>
+  </body>
+</html>

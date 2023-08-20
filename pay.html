@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>audiophile</title>
+    <link rel="icon" href="assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/Normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body bgcolor="#F2F2F2">
+    <div class="head">
+      <header>
+        <div class="logo">
+          <div class="icon-menu">
+            <i id="menu" class="fa-solid fa-bars"></i>
+          </div>
+          <img src="assets/shared/desktop/logo.svg" alt="" />
+        </div>
+        <ul class="links">
+          <i id="none" class="fa-solid fa-xmark"></i>
+          <li class="home"><a href="index.html">home</a></li>
+          <li class="headphone"><a href="headphone.html">headphone</a></li>
+          <li class="speaker"><a href="speaker.html">speakers</a></li>
+          <li class="earphone"><a href="earphone.html">earphones</a></li>
+        </ul>
+        <div class="cart">
+          <img src="assets/shared/desktop/icon-cart.svg" alt="" />
+          <span id="numCart">0</span>
+          <div class="products d-none" id="Product">
+            <div class="del">
+              <i id="xMark" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="myProducts">
+              <h4 class="emptyCart">Your cart is empty.</h4>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div id="back">
+      <a class="back" href="index.html">Go Back</a>
+    </div>
+
+    <div class="check">
+      <div class="checkOut">
+        <h1>checkout</h1>
+
+        <div class="personal">
+          <h5>Billing Details</h5>
+
+          <div class="allMail">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Yousef Abdallah" />
+              <small class="required" id="errorName"
+                >This field is required</small
+              >
+            </div>
+
+            <div>
+              <label for="mail">Email</label>
+              <input type="text" id="mail" placeholder="alexei@mail.com" />
+              <small class="required" id="errorMail"
+                >This field is required</small
+              >
+            </div>
+          </div>
+
+          <div class="phone">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="+1 202-555-0136"
+              maxlength="13"
+            />
+            <small class="required" id="errorPhone"
+              >This field is required</small
+            >
+          </div>
+
+          <div class="shipping">
+            <h5>shipping info</h5>
+            <div class="address">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                placeholder="1137 Williams Avenue"
+              />
+              <small class="required" id="errorAddress"
+                >This field is required</small
+              >
+            </div>
+            <div class="allMail">
+              <div>
+                <label for="code">ZIP Code</label>
+                <input type="text" id="code" placeholder="1001" maxlength="4" />
+                <small class="required" id="errorCode"
+                  >This field is required</small
+                >
+              </div>
+
+              <div>
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="cairo" />
+                <small class="required" id="errorCity"
+                  >This field is required</small
+                >
+              </div>
+            </div>
+            <div>
+              <label for="country">Country</label>
+              <input type="text" id="country" placeholder="Egypt" />
+              <small class="required" id="errorCountry"
+                >This field is required</small
+              >
+            </div>
+          </div>
+          <div class="payment">
+            <div class="right">
+              <h5>payment details</h5>
+              <p>Payment Method</p>
+            </div>
+            <div class="left">
+              <div class="div">
+                <input class="select" id="credit" type="radio" name="select" />
+                <label for="credit">e-Money</label>
+              </div>
+              <div class="div checked">
+                <input
+                  class="select"
+                  checked
+                  id="cash"
+                  type="radio"
+                  name="select"
+                />
+                <label for="cash">Cash on Delivery</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary">
+        <h1>summary</h1>
+        <div id="productItem">
+          <div id="totalNum">
+            <h5>TOTAL</h5>
+            <p id="TOTAL"></p>
+          </div>
+          <div id="totalNum">
+            <h5>SHIPPING</h5>
+            <p id="SHIPPING"></p>
+          </div>
+          <div id="totalNum">
+            <h5>VAT (INCLUDED)</h5>
+            <p id="VAT"></p>
+          </div>
+          <div id="totalNum">
+            <h5>GRAND TOTAL</h5>
+            <p id="GRAND"></p>
+          </div>
+        </div>
+        <div id="btn" onclick="checkButton()">CONTINUE & PAY</div>
+      </div>
+    </div>
+
+    <div class="orderCheck d-none">
+      <div class="thanks">
+        <img src="assets/checkout/icon-order-confirmation.svg" alt="" />
+        <h2>
+          THANK YOU <br />
+          FOR YOUR ORDER
+        </h2>
+        <p>You will receive an email confirmation shortly.</p>
+      </div>
+      <div class="checkMyOrder">
+        <h2>Grand Total</h2>
+        <strong id="myAllSalary"></strong>
+      </div>
+      <a id="clearData" href="index.html">BACK TO HOME</a>
+    </div>
+
+    <footer class="page-1">
+      <div class="logo">
+        <img src="assets/shared/desktop/logo.svg" alt="" />
+        <ul class="icon">
+          <li class="home"><a href="index.html">home</a></li>
+          <li class="headphone"><a href="headphone.html">headphone</a></li>
+          <li class="speaker"><a href="speaker.html">speakers</a></li>
+          <li class="earphone"><a href="earphone.html">earphones</a></li>
+        </ul>
+      </div>
+      <div id="social">
+        <div class="des">
+          Audiophile is an all in one stop to fulfill your audio needs. We're a
+          small team of music lovers and sound specialists who are devoted to
+          helping you get the most out of personal audio. Come and visit our
+          demo facility - we’re open 7 days a week.
+        </div>
+        <div class="socialMedia">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="copyRight">
+        <i class="fa-regular fa-copyright"></i>
+        <span id="copyRight"></span>
+        <span>All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
